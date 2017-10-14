@@ -39,7 +39,7 @@ def getGeocoding(allIps):
 def main():
     allIps = loadAllData()
     geocodedIps = getGeocoding(allIps)
-    with open('viewer/geocodedIps.json', 'w') as outfile:
+    with open('geocodedIps.json', 'w') as outfile:
         json.dump(geocodedIps, outfile)
 
 
